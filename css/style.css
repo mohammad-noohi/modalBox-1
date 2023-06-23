@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.header {
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(#000000b0, #0000007a),
+    url(../images/20230622131605_[fpdl.in]_closeup-shot-tiny-flower-growing-fresh-green-grass-with-blurred-background_181624-22273_full.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__title {
+  font-size: 6rem;
+  color: #ead08b;
+  padding: 2rem 4rem;
+  margin-bottom: 4rem;
+  border-radius: 0.8rem;
+}
+
+.hero-btn {
+  background-color: #5b504e;
+  color: #ffffff;
+  padding: 1rem 1.4rem;
+  text-transform: capitalize;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+/* modal */
+
+.modal-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.644);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 400ms linear;
+}
+
+.modal {
+  position: absolute;
+  background-color: #ffffffcf;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  width: 40rem;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.modal-text {
+  line-height: 1.5;
+}
+
+.close-modal {
+  color: red;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+}
